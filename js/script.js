@@ -56,7 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
         galleryContainer.innerHTML = '';
 
         try {
-            const apiKey = 'DEMO_KEY';
+            // Using your personal NASA API Key
+            const apiKey = 'PbbNtMcGcWjzftCNGpPHjm8GkNPJJQNtMKJBq9cq';
             const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&start_date=${startDate}&end_date=${endDate}`;
             
             const response = await fetch(url);
